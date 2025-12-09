@@ -1,0 +1,44 @@
+import React from 'react'
+import WindowControls from '../components/WindowControls'
+import { Download } from 'lucide-react'
+import { Document, Page, pdfjs } from 'react-pdf';
+import 'react-pdf/dist/Page/AnnotationLayer.css';
+import 'react-pdf/dist/Page/TextLayer.css';
+
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.mjs',
+  import.meta.url,
+).toString();
+
+const Resume = () => {
+  return (
+    <>
+    <div id='resume'>
+      <div id='window-header'  >
+        <WindowControls target='resume' />
+        <h2>Resume.pdf</h2>
+
+        <a href="files/resume.pdf" download
+          className='cursor-pointer'
+          title='Download resume'>
+          <Download className='icon' />
+        </a>
+
+      </div>
+
+
+{/* <div className=" max-w-[500px] mx-auto"> */}
+        <Document file="files/resume.pdf"  >
+        <Page pageNumber={1} 
+        renderAnnotationLayer
+        renderTextLayer
+        />
+      </Document>
+{/* </div>  */}
+
+</div>
+    </>
+  )
+}
+
+export default Resume
