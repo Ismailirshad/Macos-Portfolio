@@ -1,8 +1,7 @@
-import React from 'react'
+import useModalStore from '../store/useModalStore.js'
 import WindowControls from '../components/WindowControls'
 import { Mail, Search } from 'lucide-react'
 import { gallery, photosLinks } from '../constants'
-import useModalStore from '../store/useModalStore'
 
 const Photos = () => {
     const {openModal} = useModalStore()
@@ -31,10 +30,10 @@ const Photos = () => {
                 </ul>
             </div>
 
-            <div className="gallery">
-                <ul>
+            <div>
+                <ul className='grid grid-cols-2 gap-3 space-y-3 p-5' >
                     {gallery.map(({id, img}) => (
-                        <li key={id} onClick={() => openModal("imgfile", {
+                        <li className='size-56 overflow-hidden object-cover rounded-xl' key={id} onClick={() => openModal("imgfile", {
                             id,
                             name: "Gallery image",
                             icon: "/images/image.png",
@@ -42,7 +41,7 @@ const Photos = () => {
                             fileType: "img",
                             imageUrl: img
                         }) } >
-                            <img src={img} alt={`Gallery image ${id}`} />
+                            <img src={img} alt={`Gallery image ${id}`}  />
                         </li>
                     ))}
                 </ul>

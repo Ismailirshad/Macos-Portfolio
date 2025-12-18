@@ -38,37 +38,37 @@ const navIcons = [
 const dockApps = [
   {
     id: "finder",
-    name: "Portfolio", // was "Finder"
+    name: "Portfolio", 
     icon: "finder.png",
     canOpen: true,
   },
   {
     id: "safari",
-    name: "Articles", // was "Safari"
+    name: "Articles", 
     icon: "safari.png",
     canOpen: true,
   },
   {
     id: "photos",
-    name: "Gallery", // was "Photos"
+    name: "Gallery", 
     icon: "photos.png",
     canOpen: true,
   },
   {
     id: "contact",
-    name: "Contact", // or "Get in touch"
+    name: "Contact", 
     icon: "contact.png",
     canOpen: true,
   },
   {
     id: "terminal",
-    name: "Skills", // was "Terminal"
+    name: "Skills", 
     icon: "terminal.png",
     canOpen: true,
   },
   {
     id: "trash",
-    name: "Archive", // was "Trash"
+    name: "Archive", 
     icon: "trash.png",
     canOpen: false,
   },
@@ -80,14 +80,14 @@ const blogPosts = [
     date: "Aug 15, 2025",
     title: "Role-Based Access Control (RBAC) Explained: Simple Guide with Animated Flows",
     image: "/images/blog1.png",
-    link: "https://mastering-jwt-authentication.hashnode.dev/role-based-access-control-rbac-simple-guide-with-animated-flow-diagrams",
+    link: "https://irshadblog.hashnode.dev/role-based-access-control-rbac-simple-guide-with-animated-flow-diagrams",
   },
   {
     id: 2,
     date: "Aug 28, 2025",
     title: "API Rate Limiting Explained: Simple Code + Animated Workflows",
     image: "/images/blog2.jpg",
-    link: "https://mastering-jwt-authentication.hashnode.dev/understanding-rate-limiting-simple-guide-with-animated-flow-diagrams",
+    link: "https://irshadblog.hashnode.dev/understanding-rate-limiting-simple-guide-with-animated-flow-diagrams",
   },
   {
     id: 3,
@@ -95,66 +95,112 @@ const blogPosts = [
     title:
       "JWT Authentication Workflow (With Diagrams)",
     image: "/images/blog3.jpg",
-    link: "https://mastering-jwt-authentication.hashnode.dev/understanding-jwt-json-web-tokens",
+    link: "https://irshadblog.hashnode.dev/understanding-jwt-json-web-tokens",
   },
 ];
 
 const techStack = [
   {
-    category: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript"],
+    category: "Frontend Development",
+    items: [
+      "React.js",
+      "Zustand",
+      "Context API",
+      "Tailwind CSS",
+      "DaisyUI",
+      "Axios",
+    ],
   },
   {
-    category: "Mobile",
-    items: ["React Native", "Expo"],
+    category: "Backend Development",
+    items: [
+      "Node.js",
+      "Express.js",
+      "REST API Design",
+      "JWT Authentication",
+      "Role-Based Access Control (RBAC)",
+      "Rate Limiting",
+    ],
   },
   {
-    category: "Styling",
-    items: ["Tailwind CSS", "Sass", "CSS"],
+    category: "Database & Data Layer",
+    items: [
+      "MongoDB",
+      "Mongoose",
+      "Firebase Firestore",
+    ],
   },
   {
-    category: "Backend",
-    items: ["Node.js", "Express", "NestJS", "Hono"],
+    category: "Real-Time & Cloud Services",
+    items: [
+      "Socket.io",
+      "Cloudinary",
+      "Stripe Payments",
+      "Nodemailer / Email Services",
+    ],
   },
   {
-    category: "Database",
-    items: ["MongoDB", "PostgreSQL"],
+    category: "Authentication & Security",
+    items: [
+      "JWT & Refresh Tokens",
+      "Bcrypt Password Hashing",
+      "Protected Routes",
+      "Secure Cookie Handling",
+    ],
   },
   {
-    category: "Dev Tools",
-    items: ["Git", "GitHub", "Docker"],
+    category: "Deployment & DevOps",
+    items: [
+      "AWS EC2",
+      "Nginx",
+      "PM2",
+      "Vercel",
+      "Render",
+      "Netlify",
+    ],
+  },
+  {
+    category: "Developer Tools",
+    items: [
+      "Git & GitHub",
+      "Postman",
+      "REST API Testing",
+      "Environment Configuration",
+    ],
   },
 ];
 
+
 const socials = [
-  {
-    id: 1,
-    text: "Github",
-    icon: "/icons/github.svg",
-    bg: "#f4656b",
-    link: "https://github.com/JavaScript-Mastery-Pro",
-  },
-  {
-    id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
-    bg: "#4bcb63",
-    link: "https://jsmastery.com/",
-  },
-  {
-    id: 3,
-    text: "Twitter/X",
-    icon: "/icons/twitter.svg",
-    bg: "#ff866b",
-    link: "https://x.com/jsmasterypro",
-  },
-  {
-    id: 4,
-    text: "LinkedIn",
-    icon: "/icons/linkedin.svg",
-    bg: "#05b6f6",
-    link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
-  },
+{
+  id: 1,
+  text: "GitHub",
+  icon: "/icons/github.svg",
+  bg: "#1f2937", // dark slate
+  link: "https://github.com/Ismailirshad",
+},
+{
+  id: 2,
+  text: "Email",
+  icon: "/icons/mal.png",
+  bg: "#047857", // emerald-700 (cleaner)
+  link: "https://mail.google.com/mail/?view=cm&fs=1&to=irshadsha164@gmail.com&su=Portfolio%20Contact",
+},
+{
+  id: 3,
+  text: "Portfolio",
+  icon: "/icons/portfolio.png",
+  bg: "#065f46", // emerald-800 (slightly darker)
+  link: "https://your-portfolio-url.vercel.app",
+},
+{
+  id: 4,
+  text: "LinkedIn",
+  icon: "/icons/linkedin.svg",
+  bg: "#1e293b", // slate-800
+  link: "https://www.linkedin.com/in/ismail-irshad/",
+},
+
 ];
 
 const photosLinks = [
@@ -188,19 +234,19 @@ const photosLinks = [
 const gallery = [
   {
     id: 1,
-    img: "/images/gal1.png",
+    img: "/images/irshad8.jpg",
   },
   {
     id: 2,
-    img: "/images/gal2.png",
+    img: "/images/resumeDp.png",
   },
   {
     id: 3,
-    img: "/images/gal3.png",
+    img: "/images/gallery3.png",
   },
   {
     id: 4,
-    img: "/images/gal4.png",
+    img: "/images/gallery4.png",
   },
 ];
 
@@ -222,27 +268,27 @@ const WORK_LOCATION = {
   icon: "/icons/work.svg",
   kind: "folder",
   children: [
-    // ▶ Project 1
+    // Project 1
     {
       id: 5,
-      name: "Nike Ecommerce Website Application",
+      name: "Luxora Premium Ecommerce Website Application",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-5", // icon position inside Finder
-      windowPosition: "top-[10vh] left-55", // optional: Finder window position
+      position: "top-10 left-5",
+      windowPosition: "top-[10vh] md:left-55 left-10 ",
       children: [
         {
           id: 1,
-          name: "Nike Project.txt",
+          name: "Luxora Project.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+            "Luxora Premium is a full-stack clothing e-commerce application designed to deliver a smooth and secure online shopping experience for premium fashion products.",
+            "The platform supports both customer and admin roles with proper role-based access control, allowing admins to manage products, categories, featured collections, and pagination efficiently, while customers can browse, add items to cart, and complete purchases seamlessly.",
+            "The project includes secure Stripe payment integration for handling online transactions and order workflows, along with Cloudinary-based image uploads for managing high-quality product media. ",
+            "Built using React, Zustand, Tailwind CSS, Node.js, Express, and MongoDB, Luxora Premium focuses on performance, scalability, and real-world e-commerce functionality.",
           ],
         },
         {
@@ -256,29 +302,20 @@ const WORK_LOCATION = {
         },
         {
           id: 4,
-          name: "nike.png",
-          icon: "/images/image.png",
+          name: "Luxora.png",
+          icon: "/images/luxoraLogo.png",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/project-1.png",
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 right-20",
+          imageUrl: "/images/luxora.png",
         },
       ],
     },
 
-    // ▶ Project 2
+    // Project 2
     {
       id: 6,
-      name: "AI Resume Analyzer",
+      name: "QuickChat Real-Time Chat Application",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-80",
@@ -286,16 +323,17 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "AI Resume Analyzer Project.txt",
+          name: "QuickChat Project.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 right-10",
           description: [
-            "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-            "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-            "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-            "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
+            "QuickChat is a real-time chat application built to provide fast, interactive, and secure communication between users.",
+            " The platform leverages Socket.io to enable instant messaging and live user interactions, including online and offline presence tracking for a more engaging chat experience.",
+            " Users can share images seamlessly through Cloudinary-powered media uploads, update their profiles, and receive real-time notifications with sound alerts.",
+            " The backend is secured using JWT-based authentication, protected routes, and rate limiting to ensure safe and reliable communication.",
+            "Developed with React, Zustand, Tailwind CSS, Node.js, Express, and MongoDB, QuickChat focuses on real-time performance, scalability, and a polished user experience."
           ],
         },
         {
@@ -309,46 +347,37 @@ const WORK_LOCATION = {
         },
         {
           id: 4,
-          name: "ai-resume-analyzer.png",
-          icon: "/images/image.png",
+          name: "QuickChat.png",
+          icon: "/images/quickChat-logo.png",
           kind: "file",
           fileType: "img",
           position: "top-52 left-80",
-          imageUrl: "/images/project-2.png",
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 left-5",
+          imageUrl: "/images/quickChat.png",
         },
       ],
     },
 
-    // ▶ Project 3
+    // Project 3
     {
       id: 7,
-      name: "Food Delivery App",
+      name: "InstaClone Social Media Application",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
-      windowPosition: "top-[20vh] left-300",
+      windowPosition: "top-[20vh] md:left-300 left-120",
       children: [
         {
           id: 1,
-          name: "Food Delivery App Project.txt",
+          name: "InstaClone Social Media Application Project.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-            "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-            "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-            "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+            "InstaClone is a social media application inspired by modern photo-sharing platforms, built to replicate core social networking features with a smooth and responsive user experience.",
+            " The application allows users to create and share posts, engage through likes and comments, and connect with others using a follow and unfollow system supported by a suggested users algorithm.",
+            " Each user has a dedicated profile page displaying posts along with follower and following statistics. Authentication is handled securely using Firebase OAuth, ensuring safe user access, while toast notifications and skeleton loaders enhance the overall UI responsiveness.",
+            " Developed using React, Zustand, Tailwind CSS, and Firebase, InstaClone focuses on usability, performance, and real-world social media interactions."
           ],
         },
         {
@@ -362,21 +391,12 @@ const WORK_LOCATION = {
         },
         {
           id: 4,
-          name: "food-delivery-app.png",
-          icon: "/images/image.png",
+          name: "InstaClone.png",
+          icon: "/images/instaClone.jpg",
           kind: "file",
           fileType: "img",
           position: "top-52 right-80",
-          imageUrl: "/images/project-3.png",
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 right-20",
+          imageUrl: "/images/instaClone.png",
         },
       ],
     },
@@ -397,7 +417,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-10 left-5",
-      imageUrl: "/images/adrian.jpg",
+      imageUrl: "/images/resumeDp.png",
     },
     {
       id: 2,
@@ -405,8 +425,8 @@ const ABOUT_LOCATION = {
       icon: "/images/image.png",
       kind: "file",
       fileType: "img",
-      position: "top-28 right-72",
-      imageUrl: "/images/adrian-2.jpg",
+      position: "top-28 md:right-72 right-20 ",
+      imageUrl: "/images/irshad3.JPG",
     },
     {
       id: 3,
@@ -415,7 +435,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-52 left-80",
-      imageUrl: "/images/adrian-3.jpeg",
+      imageUrl: "/images/irshad2.jpg",
     },
     {
       id: 4,
@@ -424,13 +444,12 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "txt",
       position: "top-60 left-5",
-      subtitle: "Meet the Developer Behind the Code",
-      image: "/images/adrian.jpg",
+      subtitle: "Developer Behind the Code",
+      image: "/images/resumeDp.png",
       description: [
-        "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-        "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-        "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-        "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+        "I’m Ismail Irshad, a self-taught MERN Stack Developer focused on building scalable and practical web applications.",
+        " I work with React and Zustand on the frontend, and Node.js, Express, and MongoDB on the backend. I’ve implemented secure authentication systems, optimized REST APIs, and real-time features using Firebase and Socket.io.",
+        " I’ve built and deployed full-stack projects including a real-time chat app, an e-commerce platform, and an Instagram clone backend. My applications are deployed on Vercel, Render, Netlify, and Amazon EC2."
       ],
     },
   ],
@@ -449,8 +468,6 @@ const RESUME_LOCATION = {
       icon: "/images/pdf.png",
       kind: "file",
       fileType: "pdf",
-      // you can add `href` if you want to open a hosted resume
-      // href: "/your/resume/path.pdf",
     },
   ],
 };
@@ -469,7 +486,7 @@ const TRASH_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-10 left-10",
-      imageUrl: "/images/trash-1.png",
+      imageUrl: "/images/Trash1.png",
     },
     {
       id: 2,
@@ -478,7 +495,7 @@ const TRASH_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-40 left-80",
-      imageUrl: "/images/trash-2.png",
+      imageUrl: "/images/Trash2.png",
     },
   ],
 };
@@ -489,18 +506,3 @@ export const locations = {
   resume: RESUME_LOCATION,
   trash: TRASH_LOCATION,
 };
-
-const INITIAL_Z_INDEX = 1000;
-
-const WINDOW_CONFIG = {
-  finder: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  contact: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  resume: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  safari: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  photos: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-};
-
-export { INITIAL_Z_INDEX, WINDOW_CONFIG };

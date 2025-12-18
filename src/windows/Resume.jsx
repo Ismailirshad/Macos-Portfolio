@@ -1,4 +1,3 @@
-import React from 'react'
 import WindowControls from '../components/WindowControls'
 import { Download } from 'lucide-react'
 import { Document, Page, pdfjs } from 'react-pdf';
@@ -26,15 +25,12 @@ const Resume = () => {
 
       </div>
 
-
-{/* <div className=" max-w-[500px] mx-auto"> */}
         <Document file="files/resume.pdf"  >
         <Page pageNumber={1} 
         renderAnnotationLayer
         renderTextLayer
         />
       </Document>
-{/* </div>  */}
 
 </div>
     </>

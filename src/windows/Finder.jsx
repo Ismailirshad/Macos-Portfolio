@@ -1,14 +1,12 @@
-import React from 'react'
+import useModalStore from '../store/useModalStore.js'
+import useLocationStore from '../store/locationStore.js'
 import WindowControls from '../components/WindowControls'
 import { Search } from 'lucide-react'
 import { locations } from '../constants'
-import useLocationStore from '../store/locationStore'
 import clsx from 'clsx'
-import { li } from 'framer-motion/client'
-import useModalStore from '../store/useModalStore'
 
 const Finder = () => {
-    const { activeLocation, setActiveLocations, resetActiveLocations } = useLocationStore()
+    const { activeLocation, setActiveLocations } = useLocationStore()
     const { openModal } = useModalStore()
 
     const renderList = (items) => items.map((item) => (
@@ -24,11 +22,9 @@ const Finder = () => {
 
     const openItem = (item) => {
         if (item.fileType == 'pdf') return openModal("resume", { file: item.href })
-        if (item.fileType === "img")
-            return openModal("imgfile", item);
+        if (item.fileType === "img") return openModal("imgfile", item);
         if (item.kind == 'folder') return setActiveLocations(item)
-        if (item.fileType === "txt")
-            return openModal("txtfile", item);
+        if (item.fileType === "txt") return openModal("txtfile", item);
         if (['fig', 'url'].includes(item.fileType) && item.href)
             return window.open(item.href, "_blank")
     }

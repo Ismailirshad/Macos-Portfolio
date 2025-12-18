@@ -1,4 +1,3 @@
-import React from 'react'
 import WindowControls from '../components/WindowControls'
 import { ChevronLeft, ChevronRight, Copy, MoveRight, PanelLeft, Plus, Search, Share, ShieldHalf } from 'lucide-react'
 import { blogPosts } from '../constants'

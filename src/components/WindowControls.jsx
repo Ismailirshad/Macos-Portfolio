@@ -1,4 +1,3 @@
-import React from 'react'
 import useModalStore from '../store/useModalStore.js'
 
 const WindowControls = () => {

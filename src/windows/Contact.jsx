@@ -1,6 +1,5 @@
-import React from 'react'
-import { socials } from '../constants'
 import WindowControls from '../components/WindowControls'
+import { socials } from '../constants'
 
 const Contact = () => {
     return (
@@ -11,27 +10,48 @@ const Contact = () => {
                 <h2>Contact Me</h2>
             </div>
 
-            <div className="p-5 space-y-5">
-                <img src='/images/adrian.jpg' alt="irshad"
+            <div className="p-5 space-y-2">
+                <img src='/images/resumeDp.png' alt="irshad"
                     className='w-20 rounded-full' />
 
-                <h3>Let's Conenct</h3>
-                <p>Got an idea? A bug to squash? Or just wanna talk? I'm in.</p>
-                <p className='font-semibold '>irshadsha164@gmail.com</p>
+                <h3>Let’s Connect</h3>
+                <p className="text-sm text-gray-600">
+                    I’m open to software developer roles, freelance opportunities, and
+                    collaborative projects. Feel free to reach out for work, questions,
+                    or professional discussions.
+                </p>
 
-                <ul>
+                <p className='font-semibold '>irshadsha164@gmail.com</p>
+                <ul >
                     {socials.map(({ id, bg, link, icon, text }) => (
-                        <li key={id} style={{ backgroundColor: bg }}>
-                            <a href={link}
-                                target='_blank'
-                                rel='noopener noreferrer'
-                                title={text}>
-                                <img src={icon} alt={text} className='size-5' />
-                                <p>{text}</p>
+                        <li
+                            key={id}
+                            className="rounded-xl shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                            style={{ backgroundColor: bg }}
+                        >
+                            <a
+                                href={link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title={text}
+                                className="flex flex-col items-center"
+                            >
+                                <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-white/15">
+                                    <img
+                                        src={icon}
+                                        alt={text}
+                                        className="w-5 h-5 object-contain"
+                                    />
+                                </div>
+                                <p className="text-sm font-medium text-white tracking-wide">
+                                    {text}
+                                </p>
+
                             </a>
                         </li>
                     ))}
                 </ul>
+
             </div>
         </div>
     )

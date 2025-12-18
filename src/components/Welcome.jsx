@@ -1,7 +1,5 @@
-import React, { useRef } from 'react'
 import { motion } from "framer-motion";
 import dayjs from 'dayjs';
-
 
 const renderText = (text, className, baseWeight = 400) => {
     return [...text].map((char, i) => (
@@ -20,19 +18,15 @@ const Welcome = () => {
 
     return (
         <section id="welcome">
-              <time className="absolute -top-54 left-1/2 -translate-x-1/2 flex items-start">
-  <span className="text-[110px] font-light text-gray-100 drop-shadow-lg">
-    {dayjs().format("h:mm")}
-  </span>
+            <time className="absolute -top-54 left-1/2 -translate-x-1/2 flex items-start">
+                <span className="text-[110px] font-light text-gray-100 drop-shadow-lg">
+                    {dayjs().format("h:mm")}
+                </span>
 
-  <span className="text-3xl font-medium text-gray-300 mt-25 tracking-wide">
-    {dayjs().format("A")}
-  </span>
-</time>
-
-
-
-            
+                <span className="text-3xl font-medium text-gray-300 mt-25 tracking-wide">
+                    {dayjs().format("A")}
+                </span>
+            </time>
             <p>
                 {renderText(
                     "Hey I'am Irshad! Welcome to my",
@@ -40,6 +34,7 @@ const Welcome = () => {
                     100,
                 )}
             </p>
+
             <motion.h1 >{renderText("Portfolio", "text-8xl text-green-400 font-georama")}</motion.h1>
 
             <div className="small-screen">

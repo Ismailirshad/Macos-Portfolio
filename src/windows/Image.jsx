@@ -1,13 +1,11 @@
-import React from 'react'
-import useModalStore from '../store/useModalStore'
+import useModalStore from '../store/useModalStore.js'
 import WindowControls from '../components/WindowControls'
 
 const Image = () => {
-    const {modalData} = useModalStore()
-console.log("Modal data is", modalData)
-    if(!modalData) return null
+  const { modalData } = useModalStore()
+  if (!modalData) return null
 
-    const {name, imageUrl } = modalData;
+  const { name, imageUrl } = modalData;
 
   return (
     <div id='imgfile'>
@@ -16,12 +14,16 @@ console.log("Modal data is", modalData)
         <h2>{name}</h2>
       </div>
 
-      <div className="p-5 bg-white">
+      <div className="p-5 bg-white ">
         {imageUrl ? (
-            <div className="w-full">
-                <img src={imageUrl} alt={name} className='w-full h-auto max-w-[70vh] object-contain rounded' />
-            </div>
-        ): null }
+          <div className="w-full h-[48vh] rounded-xl overflow-hidden flex items-center justify-center">
+            <img
+              src={imageUrl}
+              alt={name}
+              className="max-w-full max-h-full rounded-xl object-contain"
+            />
+          </div>
+        ) : null}
       </div>
     </div>
   )

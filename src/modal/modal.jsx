@@ -1,19 +1,19 @@
+import useModalStore from "../store/useModalStore.js";
 import { motion, AnimatePresence } from "framer-motion";
-import useModalStore from "../store/useModalStore";
 import { useState } from "react";
 
 let globalZ = 1000;
 
 const Modal = ({ modalKey, children }) => {
-  const { activeModal,modalData, closeModal } = useModalStore();
+  const { activeModal, closeModal } = useModalStore();
   const [zIndex, setZIndex] = useState(globalZ);
 
-  if (activeModal !== modalKey) return null; // show only if active
+  if (activeModal !== modalKey) return null;
 
   return (
     <AnimatePresence>
       <motion.div
-       className="fixed inset-0"
+       className="fixed inset-0 hidden sm:block"
         style={{ zIndex }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -22,10 +22,7 @@ const Modal = ({ modalKey, children }) => {
         onClick={closeModal}
       >
         <motion.div
-         className="absolute  left-40 bg-white rounded-xl shadow-xl cursor-grab"
-          // initial={{ scale: 0.9, opacity: 0 }}
-          // animate={{ scale: 1, opacity: 1 }}
-          // exit={{ scale: 0.9, opacity: 0 }}
+         className="absolute bg-white rounded-xl shadow-xl cursor-grab"
           // for inside modal clicks 
           onClick={(e) => {
             e.stopPropagation();

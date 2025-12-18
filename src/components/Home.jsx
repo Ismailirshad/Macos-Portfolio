@@ -1,9 +1,8 @@
-import React from 'react'
+import useModalStore from '../store/useModalStore.js';
+import useLocationStore from '../store/locationStore.js';
 import { locations } from '../constants'
 import clsx from 'clsx';
 import { motion } from 'framer-motion'
-import useModalStore from '../store/useModalStore';
-import useLocationStore from '../store/locationStore';
 
 const projects = locations.work?.children ?? [];
 
@@ -17,10 +16,7 @@ const Home = () => {
     }
 
     return (
-        <section id='home'
-            drag
-            dragMomentum={false}
-            whileDrag={{ cursor: "grabbing" }}>
+        <section id='home' >
             <ul>
                 {projects.map((project) => (
                     <motion.li

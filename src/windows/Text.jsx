@@ -1,7 +1,6 @@
 import React from 'react'
 import WindowControls from '../components/WindowControls'
 import useModalStore from '../store/useModalStore.js'
-import useWindowStore from '../store/window.js'
 
 const Text = () => {
     const { modalData} = useModalStore()

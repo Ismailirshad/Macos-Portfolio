@@ -47,7 +47,6 @@ const App = () => {
         <Modal modalKey="contact">
         <Contact/>
       </Modal>
-
       
         <Modal modalKey="photos">
         <Photos/>
