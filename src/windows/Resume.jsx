@@ -12,27 +12,27 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 const Resume = () => {
   return (
     <>
-    <div id='resume'>
-      <div id='window-header'  >
-        <WindowControls target='resume' />
-        <h2>Resume.pdf</h2>
+      <div id='resume'>
+        <div id='window-header'  >
+          <WindowControls target='resume' />
+          <h2>Resume.pdf</h2>
 
-        <a href="files/resume.pdf" download
-          className='cursor-pointer'
-          title='Download resume'>
-          <Download className='icon' />
-        </a>
+          <a href="files/resume.pdf" download
+            className='cursor-pointer'
+            title='Download resume'>
+            <Download className='icon' />
+          </a>
 
-      </div>
+        </div>
 
         <Document file="files/resume.pdf"  >
-        <Page pageNumber={1} 
-        renderAnnotationLayer
-        renderTextLayer
-        />
-      </Document>
+          <Page pageNumber={1}
+            renderAnnotationLayer
+            renderTextLayer
+          />
+        </Document>
 
-</div>
+      </div>
     </>
   )
 }
