@@ -10,7 +10,7 @@ import Contact from './windows/Contact'
 import Home from './components/Home'
 import Photos from './windows/Photos'
 import Resume from './windows/Resume'
-import Modal from './modal/Modal'
+import Modal from './windows/Modal'
 
 const App = () => {
   return (
