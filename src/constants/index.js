@@ -191,7 +191,7 @@ const socials = [
   text: "Portfolio",
   icon: "/icons/portfolio.png",
   bg: "#065f46", // emerald-800 (slightly darker)
-  link: "https://your-portfolio-url.vercel.app",
+  link: "https://www.ismailirshad.in/",
 },
 {
   id: 4,
@@ -293,11 +293,11 @@ const WORK_LOCATION = {
         },
         {
           id: 2,
-          name: "nike.com",
+          name: "luxora.ismailirshad.in",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+          href: "https://luxora.ismailirshad.in/",
           position: "top-10 right-20",
         },
         {
@@ -338,11 +338,11 @@ const WORK_LOCATION = {
         },
         {
           id: 2,
-          name: "ai-resume-analyzer.com",
+          name: "quickchat.ismailirshad.in",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+          href: "https://quickchat.ismailirshad.in/",
           position: "top-20 left-20",
         },
         {
@@ -368,7 +368,7 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "InstaClone Social Media Application Project.txt",
+          name: "InstaClone Project.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
@@ -382,11 +382,11 @@ const WORK_LOCATION = {
         },
         {
           id: 2,
-          name: "food-delivery-app.com",
+          name: "Insta-Clone.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+          href: "https://orbital-builder-472004-s3.web.app/",
           position: "top-10 right-20",
         },
         {
