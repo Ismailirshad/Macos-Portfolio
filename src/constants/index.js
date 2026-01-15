@@ -107,8 +107,9 @@ const techStack = [
       "Zustand",
       "Context API",
       "Tailwind CSS",
-      "DaisyUI",
+      "Responsive UI Design",
       "Axios",
+      "Vite",
     ],
   },
   {
@@ -116,59 +117,63 @@ const techStack = [
     items: [
       "Node.js",
       "Express.js",
-      "REST API Design",
+      "RESTful API Development",
+      "MVC Architecture",
       "JWT Authentication",
       "Role-Based Access Control (RBAC)",
-      "Rate Limiting",
+      "API Rate Limiting",
     ],
   },
   {
     category: "Database & Data Layer",
     items: [
       "MongoDB",
-      "Mongoose",
+      "Mongoose ODM",
       "Firebase Firestore",
+      "Schema Design & Indexing",
     ],
   },
   {
-    category: "Real-Time & Cloud Services",
+    category: "Real-Time & Integrations",
     items: [
-      "Socket.io",
-      "Cloudinary",
+      "Socket.io (Real-Time Messaging)",
+      "Cloudinary (Media Uploads)",
       "Stripe Payments",
-      "Nodemailer / Email Services",
+      "Email Services (Nodemailer / Resend)",
     ],
   },
   {
     category: "Authentication & Security",
     items: [
       "JWT & Refresh Tokens",
+      "Secure Cookie-Based Auth",
       "Bcrypt Password Hashing",
-      "Protected Routes",
-      "Secure Cookie Handling",
+      "Protected Routes & Middleware",
     ],
   },
   {
     category: "Deployment & DevOps",
     items: [
       "AWS EC2",
-      "Nginx",
-      "PM2",
+      "Nginx Reverse Proxy",
+      "PM2 Process Manager",
       "Vercel",
       "Render",
       "Netlify",
+      "Environment Variable Management",
     ],
   },
   {
-    category: "Developer Tools",
+    category: "Developer Tools & Workflow",
     items: [
       "Git & GitHub",
-      "Postman",
-      "REST API Testing",
-      "Environment Configuration",
+      "Postman (API Testing)",
+      "REST API Debugging",
+      "Linux Server Basics",
     ],
   },
 ];
+
 
 
 const socials = [
