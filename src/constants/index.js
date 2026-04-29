@@ -38,37 +38,37 @@ const navIcons = [
 const dockApps = [
   {
     id: "finder",
-    name: "Portfolio", 
+    name: "Portfolio",
     icon: "finder.png",
     canOpen: true,
   },
   {
     id: "safari",
-    name: "Articles", 
+    name: "Articles",
     icon: "safari.png",
     canOpen: true,
   },
   {
     id: "photos",
-    name: "Gallery", 
+    name: "Gallery",
     icon: "photos.png",
     canOpen: true,
   },
   {
     id: "contact",
-    name: "Contact", 
+    name: "Contact",
     icon: "contact.png",
     canOpen: true,
   },
   {
     id: "terminal",
-    name: "Skills", 
+    name: "Skills",
     icon: "terminal.png",
     canOpen: true,
   },
   {
     id: "trash",
-    name: "Archive", 
+    name: "Archive",
     icon: "trash.png",
     canOpen: false,
   },
@@ -78,7 +78,8 @@ const blogPosts = [
   {
     id: 1,
     date: "Aug 15, 2025",
-    title: "Role-Based Access Control (RBAC) Explained: Simple Guide with Animated Flows",
+    title:
+      "Role-Based Access Control (RBAC) Explained: Simple Guide with Animated Flows",
     image: "/images/blog1.png",
     link: "https://irshadblog.hashnode.dev/role-based-access-control-rbac-simple-guide-with-animated-flow-diagrams",
   },
@@ -92,24 +93,22 @@ const blogPosts = [
   {
     id: 3,
     date: "Sep 2, 2025",
-    title:
-      "JWT Authentication Workflow (With Diagrams)",
+    title: "JWT Authentication Workflow (With Diagrams)",
     image: "/images/blog3.jpg",
     link: "https://irshadblog.hashnode.dev/understanding-jwt-json-web-tokens",
   },
 ];
+
 
 const techStack = [
   {
     category: "Frontend Development",
     items: [
       "React.js",
+      "JavaScript (ES6+)",
       "Zustand",
-      "Context API",
       "Tailwind CSS",
-      "Responsive UI Design",
       "Axios",
-      "Vite",
     ],
   },
   {
@@ -117,95 +116,62 @@ const techStack = [
     items: [
       "Node.js",
       "Express.js",
-      "RESTful API Development",
-      "MVC Architecture",
-      "JWT Authentication",
-      "Role-Based Access Control (RBAC)",
-      "API Rate Limiting",
-    ],
-  },
-  {
-    category: "Database & Data Layer",
-    items: [
       "MongoDB",
-      "Mongoose ODM",
-      "Firebase Firestore",
-      "Schema Design & Indexing",
+      "JWT Authentication",
+      "Socket.io",
     ],
   },
   {
-    category: "Real-Time & Integrations",
-    items: [
-      "Socket.io (Real-Time Messaging)",
-      "Cloudinary (Media Uploads)",
-      "Stripe Payments",
-      "Email Services (Nodemailer / Resend)",
-    ],
-  },
-  {
-    category: "Authentication & Security",
-    items: [
-      "JWT & Refresh Tokens",
-      "Secure Cookie-Based Auth",
-      "Bcrypt Password Hashing",
-      "Protected Routes & Middleware",
-    ],
-  },
-  {
-    category: "Deployment & DevOps",
-    items: [
-      "AWS EC2",
-      "Nginx Reverse Proxy",
-      "PM2 Process Manager",
-      "Vercel",
-      "Render",
-      "Netlify",
-      "Environment Variable Management",
-    ],
-  },
-  {
-    category: "Developer Tools & Workflow",
+    category: "Deployment & Tools",
     items: [
       "Git & GitHub",
-      "Postman (API Testing)",
-      "REST API Debugging",
-      "Linux Server Basics",
+      "Postman",
+      "VPS Deployment",
+      "Nginx",
+      "Vercel / Render",
+    ],
+  },
+  {
+    category: "ERPNext / Frappe",
+    items: [
+      "ERPNext",
+      "Frappe Framework",
+      "DocTypes",
+      "Workflows",
+      "Custom Scripts",
     ],
   },
 ];
 
-
-
 const socials = [
-{
-  id: 1,
-  text: "GitHub",
-  icon: "/icons/github.svg",
-  bg: "#1f2937", // dark slate
-  link: "https://github.com/Ismailirshad",
-},
-{
-  id: 2,
-  text: "Email",
-  icon: "/icons/mal.png",
-  bg: "#047857", // emerald-700 (cleaner)
-  link: "https://mail.google.com/mail/?view=cm&fs=1&to=irshadsha164@gmail.com&su=Portfolio%20Contact",
-},
-{
-  id: 3,
-  text: "Portfolio",
-  icon: "/icons/portfolio.png",
-  bg: "#065f46", // emerald-800 (slightly darker)
-  link: "https://www.ismailirshad.in/",
-},
-{
-  id: 4,
-  text: "LinkedIn",
-  icon: "/icons/linkedin.svg",
-  bg: "#1e293b", // slate-800
-  link: "https://www.linkedin.com/in/ismail-irshad/",
-},
-
+  {
+    id: 1,
+    text: "GitHub",
+    icon: "/icons/github.svg",
+    bg: "#1f2937", // dark slate
+    link: "https://github.com/Ismailirshad",
+  },
+  {
+    id: 2,
+    text: "Email",
+    icon: "/icons/mal.png",
+    bg: "#047857", // emerald-700 (cleaner)
+    link: "https://mail.google.com/mail/?view=cm&fs=1&to=irshadsha164@gmail.com&su=Portfolio%20Contact",
+  },
+  {
+    id: 3,
+    text: "Portfolio",
+    icon: "/icons/portfolio.png",
+    bg: "#065f46", // emerald-800 (slightly darker)
+    link: "https://www.ismailirshad.in/",
+  },
+  {
+    id: 4,
+    text: "LinkedIn",
+    icon: "/icons/linkedin.svg",
+    bg: "#1e293b", // slate-800
+    link: "https://www.linkedin.com/in/ismail-irshad/",
+  },
 ];
 
 const photosLinks = [
@@ -275,6 +241,48 @@ const WORK_LOCATION = {
   children: [
     // Project 1
     {
+      id: 8,
+      name: "ELITE Hotel Management & Booking Platform",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-10 left-80 ",
+      windowPosition: "top-[60vh] md:top-[60vh] md:left-100 left-50",
+      children: [
+        {
+          id: 1,
+          name: "ELITE Project.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "ELITE is a full-stack hotel management and booking platform designed to simplify hotel reservations and business operations with a modern, responsive user experience.",
+            " The platform supports three roles: User, Hotel Admin, and Super Admin. Users can browse hotels, filter rooms, check availability, book rooms, complete secure payments, and submit ratings after checkout.",
+            " Hotel Admins can manage rooms, bookings, offers, and track revenue, expenses, and profit through analytics dashboards. Super Admins can monitor all hotels, manage platform-wide operations, handle support requests, and oversee business performance.",
+            " Developed using React.js, Node.js, Express.js, MongoDB, Zustand, JWT, Razorpay, Tailwind CSS, and Recharts, ELITE focuses on scalability, security, performance, and real-world hotel workflows.",
+          ],
+        },
+        {
+          id: 2,
+          name: "elite.ismailirshad.in",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://elite.ismailirshad.in/",
+          position: "top-10 right-20",
+        },
+        {
+          id: 4,
+          name: "ELITE Logo",
+          icon: "/images/elite_logo.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-52 right-80",
+          imageUrl: "/images/elite.png",
+        },
+      ],
+    },
+    {
       id: 5,
       name: "Luxora Premium Ecommerce Website Application",
       icon: "/images/folder.png",
@@ -307,7 +315,7 @@ const WORK_LOCATION = {
         },
         {
           id: 4,
-          name: "Luxora.png",
+          name: "Luxora Logo",
           icon: "/images/luxoraLogo.png",
           kind: "file",
           fileType: "img",
@@ -338,7 +346,7 @@ const WORK_LOCATION = {
             " The platform leverages Socket.io to enable instant messaging and live user interactions, including online and offline presence tracking for a more engaging chat experience.",
             " Users can share images seamlessly through Cloudinary-powered media uploads, update their profiles, and receive real-time notifications with sound alerts.",
             " The backend is secured using JWT-based authentication, protected routes, and rate limiting to ensure safe and reliable communication.",
-            "Developed with React, Zustand, Tailwind CSS, Node.js, Express, and MongoDB, QuickChat focuses on real-time performance, scalability, and a polished user experience."
+            "Developed with React, Zustand, Tailwind CSS, Node.js, Express, and MongoDB, QuickChat focuses on real-time performance, scalability, and a polished user experience.",
           ],
         },
         {
@@ -352,7 +360,7 @@ const WORK_LOCATION = {
         },
         {
           id: 4,
-          name: "QuickChat.png",
+          name: "QuickChat Logo",
           icon: "/images/quickChat-logo.png",
           kind: "file",
           fileType: "img",
@@ -368,8 +376,8 @@ const WORK_LOCATION = {
       name: "InstaClone Social Media Application",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-80",
-      windowPosition: "top-[20vh] md:left-300 left-120",
+      position: "top-50 left-70",
+      windowPosition: "top-[20vh] md:left-200 lg:left-300 left-120",
       children: [
         {
           id: 1,
@@ -382,7 +390,7 @@ const WORK_LOCATION = {
             "InstaClone is a social media application inspired by modern photo-sharing platforms, built to replicate core social networking features with a smooth and responsive user experience.",
             " The application allows users to create and share posts, engage through likes and comments, and connect with others using a follow and unfollow system supported by a suggested users algorithm.",
             " Each user has a dedicated profile page displaying posts along with follower and following statistics. Authentication is handled securely using Firebase OAuth, ensuring safe user access, while toast notifications and skeleton loaders enhance the overall UI responsiveness.",
-            " Developed using React, Zustand, Tailwind CSS, and Firebase, InstaClone focuses on usability, performance, and real-world social media interactions."
+            " Developed using React, Zustand, Tailwind CSS, and Firebase, InstaClone focuses on usability, performance, and real-world social media interactions.",
           ],
         },
         {
@@ -396,7 +404,7 @@ const WORK_LOCATION = {
         },
         {
           id: 4,
-          name: "InstaClone.png",
+          name: "InstaClone Logo",
           icon: "/images/instaClone.jpg",
           kind: "file",
           fileType: "img",
@@ -425,15 +433,6 @@ const ABOUT_LOCATION = {
       imageUrl: "/images/resumeDp.png",
     },
     {
-      id: 2,
-      name: "casual-me.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-28 md:right-72 right-20 ",
-      imageUrl: "/images/irshad3.JPG",
-    },
-    {
       id: 3,
       name: "conference-me.png",
       icon: "/images/image.png",
@@ -452,9 +451,10 @@ const ABOUT_LOCATION = {
       subtitle: "Developer Behind the Code",
       image: "/images/resumeDp.png",
       description: [
-        "I’m Ismail Irshad, a self-taught MERN Stack Developer focused on building scalable and practical web applications.",
-        " I work with React and Zustand on the frontend, and Node.js, Express, and MongoDB on the backend. I’ve implemented secure authentication systems, optimized REST APIs, and real-time features using Firebase and Socket.io.",
-        " I’ve built and deployed full-stack projects including a real-time chat app, an e-commerce platform, and an Instagram clone backend. My applications are deployed on Vercel, Render, Netlify, and Amazon EC2."
+        "I’m Ismail Irshad, a self-taught Full-Stack Developer building scalable and user-friendly web applications.",
+        "I work with React.js, Tailwind CSS, Zustand, Node.js, Express.js, and MongoDB to create modern full-stack solutions.",
+        "I also have hands-on experience with ERPNext/Frappe, including customizations, DocTypes, workflows, POS systems, and automation.",
+        "I’ve built projects like a hotel booking platform, e-commerce app, real-time chat app, and social media clone, deployed on VPS, Nginx, Vercel, and Render.",
       ],
     },
   ],

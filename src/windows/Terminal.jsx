@@ -8,10 +8,10 @@ const Terminal = () => {
     const { closeModal } = useModalStore()
     return (
 
-        <div id='terminal'  >
+        <div className='max-w-3xl' id='terminal'  >
             <div id="window-header" >
                 <WindowControls />
-                <h2>Teach Stack</h2>
+                <h2>Tech Stack</h2>
             </div>
 
             <div className="techstack">
@@ -30,23 +30,18 @@ const Terminal = () => {
                         <li key={category} className='flex'>
                             <Check className='check' size={20} />
                             <h3>{category}</h3>
-                            <ul>
-                                {items.map((item, index) => (
-                                    <li key={index}> {item}
-                                        {index < items.length - 1 ? "," : ""}</li>
-                                ))}
-                            </ul>
+                            <p className="flex-1">{items.join(", ")}</p>
                         </li>
                     ))}
                 </ul>
 
                 <div className="footnote">
                     <p>
-                        <Check size={20} className="inline-block" /> 7 of 7 stacks loaded successfully(100%)
+                        <Check size={20} className="inline-block" /> 4 of 4 stacks loaded successfully(100%)
                     </p>
                     <p className='text-white'>
                         <Flag size={15} fill='black' />
-                        Render time: 8ms
+                        Render time: 4ms
                     </p>
                 </div>
 

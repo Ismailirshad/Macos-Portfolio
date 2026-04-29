@@ -18,11 +18,9 @@ const Contact = () => {
 
         <h3>Let’s Connect</h3>
         <p className="text-sm text-gray-600">
-          I’m actively seeking Software Developer roles and freelance
-          opportunities where I can contribute to building scalable, secure, and
-          user-focused web applications. With experience in full-stack MERN
-          projects, real-time systems, and production deployments, I’m always
-          open to meaningful collaborations and professional conversations.
+          I’m actively seeking opportunities as a Software Developer or ERPNext/Frappe Developer where I can contribute to building scalable, secure,
+          and user-focused solutions. With hands-on experience in MERN stack applications, ERPNext customizations, real-time systems, and production
+          deployments, I’m open to meaningful collaborations and growth-focused opportunities.
         </p>
 
         <p className="font-semibold ">irshadsha164@gmail.com</p>
