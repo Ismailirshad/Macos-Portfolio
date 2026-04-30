@@ -30,15 +30,19 @@ const Welcome = () => {
             <p>
                 {renderText(
                     "Hey I'am Irshad! Welcome to my",
-                    "text-3xl font-georama",
+                    "text-base sm:text-lg md:text-xl lg:text-2xl text-white/80 font-georama font-medium tracking-wide drop-shadow-md",
                     100,
                 )}
             </p>
 
-            <motion.h1 >{renderText("Portfolio", "text-8xl text-green-400 font-georama")}</motion.h1>
-
+            <motion.h1>
+                {renderText(
+                    "Portfolio",
+                    "text-5xl sm:text-6xl md:text-7xl lg:text-8xl bg-gradient-to-r from-green-400 to-emerald-300 text-transparent bg-clip-text font-georama font-bold tracking-tight drop-shadow-lg"
+                )}
+            </motion.h1>
             <div className="small-screen">
-                <p>This Portfolio is designed for desktop/tabled screens only</p>
+                <p className="text-slate-100">This Portfolio is designed for desktop/tabled screens only</p>
             </div>
         </section>
     )
